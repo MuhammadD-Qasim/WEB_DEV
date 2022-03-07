@@ -1,0 +1,79 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container > h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.box {
+  padding: 5px;
+  float: left;
+}
+
+.box > section {
+  background-color: rgba(35, 88, 134, 0.76);
+  border: 2px solid black;
+  border-radius: 7px;
+  padding-left: 15px;
+  height: 300px;
+  position: relative;
+}
+
+.box > section > h3 {
+    position: absolute;
+    right: 0px;
+    padding: 10px 43px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 150px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#h1{
+    background-color: blueviolet;
+}
+
+#h2{
+    background-color: rgb(43, 226, 211);
+}
+
+#h3{
+    background-color: rgb(119, 199, 66);
+}
+
+.box > section > p {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* FOR DESKTOP VERSION */
+@media screen and (min-width: 992px) {
+  .box {
+    width: 33.33%;
+  }
+}
+
+/* FOR TABLET VERSION */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .box {
+    width: 50%;
+  }
+  .box3 {
+    width: 100%;
+  }
+}
+
+/* FOR MOBILE VERSION */
+@media screen and (max-width: 767px) {
+  .box {
+    width: 100%;
+  }
+}
